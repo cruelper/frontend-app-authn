@@ -5,3 +5,21 @@
 
 @import "@edx/frontend-component-cookie-policy-banner/build/_cookie-policy-banner";
 @import "sass/style";
+
+$main-color: #2780e3;
+
+#root {
+	border-radius: 0 !important;
+
+	.btn-brand {
+		background-color: $main-color !important;
+		border-color: $main-color !important;
+		color: #fff !important;
+	}
+	
+	.btn-brand:hover {
+		background-color: #fff !important;
+		border-color: $main-color !important;
+		color: $main-color !important;
+	}
+}
