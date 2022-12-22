@@ -7,19 +7,44 @@
 @import "sass/style";
 
 $main-color: #2780e3;
+$secondary-color: #0d47a1;
 
 #root {
-	border-radius: 0 !important;
-
+// 	кнопки
 	.btn-brand {
 		background-color: $main-color !important;
 		border-color: $main-color !important;
 		color: #fff !important;
+		border-radius: 0 !important;
 	}
 	
 	.btn-brand:hover {
 		background-color: #fff !important;
 		border-color: $main-color !important;
 		color: $main-color !important;
+	}
+	
+// 	инпуты ввода данных
+	.form-control {
+		border-radius: 0 !important;	
+	}
+	.form-control:focus {
+		border-color: $main-color !important;
+		box-shadow: 0 0 0 1px $main-color !important;
+	}
+	
+// 	пункты Зарегистрироваться/Войти
+	.nav-link.active {
+		border-color: #0000 #0000 $main-color !important;
+    		color: $main-color !important;
+	}
+	
+// 	левая вертикальная полоса с написью
+	.bg-primary-400 {
+		background-color: $secondary-color !important;
+	}
+// 	наклонная полоса справа от надписи
+	.large-screen-svg-primary {
+		fill: $secondary-color !important;
 	}
 }
