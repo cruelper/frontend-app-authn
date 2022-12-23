@@ -47,4 +47,16 @@ $secondary-color: #0d47a1;
 	.large-screen-svg-primary {
 		fill: $secondary-color !important;
 	}
+	
+// 	текст "Начни учиться с" на вертикальной полосе
+	.text-start-learning {
+		color: hsla(0,0%,100%,.7) !important;
+	}
+	
+// 	название платформы после текста
+	.text-accent-a {
+		color: #fff !important;
+	}
+	
+	
 }
