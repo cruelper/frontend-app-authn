@@ -1,6 +1,6 @@
 {
-  "start.learning": "Начните учиться",
-  "with.site.name": "с {siteName}",
+  "start.learning": "Начните учиться с",
+  "with.site.name": "{siteName}",
   "complete.your.profile.1": "Заполните",
   "complete.your.profile.2": "свой профиль",
   "welcome.to.platform": "Добро пожаловать, {username}!",
