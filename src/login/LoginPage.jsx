@@ -166,31 +166,10 @@ class LoginPage extends React.Component {
   renderThirdPartyAuth(providers, secondaryProviders, currentProvider, thirdPartyAuthApiStatus, intl) {
     const isInstitutionAuthActive = !!secondaryProviders.length && !currentProvider;
     const isSocialAuthActive = !!providers.length && !currentProvider;
-    const isEnterpriseLoginDisabled = getConfig().DISABLE_ENTERPRISE_LOGIN;
+    const isEnterpriseLoginDisabled = false;
 
     return (
       <>
-        {((isEnterpriseLoginDisabled))
-           && (
-             <div className="isEnterpriseLoginDisabled">
-               {intl.formatMessage(messages['login.other.options.heading'])}
-             </div>
-           )}
-           
-        {((isSocialAuthActive))
-           && (
-             <div className="isSocialAuthActive">
-               {intl.formatMessage(messages['login.other.options.heading'])}
-             </div>
-           )}
-           
-        {((isInstitutionAuthActive))
-           && (
-             <div className="isInstitutionAuthActive">
-               {intl.formatMessage(messages['login.other.options.heading'])}
-             </div>
-           )}
-      
         {((!isEnterpriseLoginDisabled && isSocialAuthActive) || (isEnterpriseLoginDisabled && isInstitutionAuthActive))
            && (
              <div className="mt-4 mb-3 h4">
